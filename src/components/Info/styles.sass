@@ -1,0 +1,135 @@
+.info
+    display: flex
+    justify-content: center
+    align-items: center
+
+    background: linear-gradient(90deg, rgba(244,245,253,1) 0%, rgba(210,216,248,1) 100%)
+    padding: 60px 0px
+    button
+        display: none
+        border: 1px solid rgb(210, 216, 248)
+        font-size: 16px
+        font-weight: 500
+        color: rgb(0, 104, 255)
+        background-color: transparent
+        transition: all 0.1s linear
+        border-radius: 39px
+        height: 58px
+        width: 180px
+        &:hover
+            border-color: rgb(0, 104, 255)
+            background-color: rgb(228, 231, 251)
+    .info-info
+        display: flex
+        flex-direction: column
+        gap: 24px
+        margin-right: 30px
+        h1
+            font-size: 40px
+            font-weight: 600
+        p
+            font-size: 19px
+            font-weight: 400
+        button
+            display: block
+
+    .info-vid
+        display: flex
+        gap: 30px
+        .vid
+            width: 360px
+            height: 428px
+            color: white
+            position: relative
+            overflow: hidden
+            border-radius: 20px
+            video
+                position: absolute
+                bottom: -70px
+                width: 100%
+            div
+                width: 100%
+                position: absolute
+                bottom: 30px
+                text-align: center
+                left: 50%
+                transform: translateX(-50%)
+                h1
+                    font-size: 24px
+                    font-weight: 600
+                span
+                    margin-top: 20px
+                    font-size: 18px
+                    font-weight: 400
+
+@media screen and (max-width: 1320px)
+    .info
+        .info-vid
+            .vid
+                width: 294px
+                height: 349px
+
+@media screen and (max-width: 1024px)
+    .info
+        flex-direction: column
+        button
+            display: block
+            width: 185px
+            height: 50px
+            background-color: #fff
+        .info-info
+            display: flex
+            flex-direction: column
+            gap: 24px
+            margin-right: 0px
+            margin-bottom: 50px
+            text-align: center
+            h1
+                font-size: 26px
+            p
+                font-size: 16px
+            button
+                display: none
+
+        .info-vid
+            gap: 11px
+            .vid
+                width: 368px
+                height: 535px
+                color: black
+                video
+                    position: absolute
+                    bottom: 85px
+                    width: 100%
+                    border-radius: 20px
+                div
+                    bottom: 0
+                    h1
+                        font-size: 18px
+                        font-weight: 600
+                    span
+                        margin-top: 5px
+                        display: block
+                        font-size: 11px
+                        &:nth-child(3)
+                            font-size: 19px
+
+@media screen and (max-width: 767px)
+    .info
+        .info-vid
+            .vid
+                width: 304px
+                height: 459px
+             
+@media screen and (max-width: 655px)
+    .info
+        justify-content: center
+        .info-info
+            margin-bottom: 20px
+        .info-vid
+            align-items: flex-start
+            justify-content: flex-start
+            .vid
+                width: 47vw
+                height: 72vh
+             

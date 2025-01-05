@@ -1,0 +1,59 @@
+.carousel
+    position: relative
+    .velocity
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        padding: 20px
+
+        z-index: 1
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+
+        gap: 30px
+        img
+            width: 350px
+        button
+            z-index: 2
+            text-transform: uppercase
+
+            height: 36px
+            width: 150px
+
+            background: transparent
+
+            font-size: 16px
+            font-weight: 600
+
+            border-radius: 25px
+            border: 1px white solid
+
+            transition: all 0.1s linear
+            cursor: pointer
+            &:hover
+                background-color: white
+                color: black              
+    .slider
+        overflow: hidden
+        border-radius: 0px 0px 40px 40px
+        height: calc(100vh - 182px)
+        .slick-slide
+            position: relative
+            overflow: hidden
+            width: 100%
+            img
+                height: calc(100vh - 182px)
+                width: 100%
+                object-fit: cover
+                border-radius: inherit
+
+@media screen and (max-width: 1024px)
+    .carousel
+        .slider
+            height: calc(100vh - 104px)
+            .slick-slide
+                img
+                    height: calc(100vh - 104px)

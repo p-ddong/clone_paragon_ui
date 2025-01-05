@@ -1,0 +1,168 @@
+.bestseller
+    display: flex
+    background-color: rgb(228, 231, 251)
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    padding: 60px 0px
+    gap: 50px
+    button
+        border: 1px solid rgb(210, 216, 248)
+        font-size: 16px
+        font-weight: 500
+        color: rgb(0, 104, 255)
+        background-color: transparent
+        transition: all 0.1s linear
+        border-radius: 39px
+        height: 58px
+        width: 180px
+        &:hover
+            border-color: rgb(0, 104, 255)
+            background-color: rgb(228, 231, 251)
+
+    h1
+        font-size: 40px
+        font-weight: 600
+
+    .card-list
+        display: grid
+        gap: 40px
+        grid-template-columns: auto auto auto auto
+
+.bestseller-card
+    display: flex
+    flex-direction: column
+    gap: 5px
+    .img-container
+        overflow: hidden
+        width: 356px
+        height: 540px
+        border-radius: 10px
+        border: 0px solid rgb(229, 231, 235)
+
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+
+        background: linear-gradient(180deg, rgba(208,144,172,0) 0%, rgba(0,0,0,1) 100%)
+        position: relative
+
+        margin-bottom: 10px
+        img
+            width: 356px
+        .img1,.img2
+            height: 496px
+        .img2
+            display: none
+        .logo
+            margin-top: auto
+            margin-bottom: auto
+            width: 110px
+        &:hover
+            .img1
+                display: none
+            .img2
+                display: block
+    p
+        color: rgb(80, 80, 80)
+        font-size: 16px
+        font-weight: 600
+    .rating,.trade-mark,.color
+        font-weight: 400
+    .trade-mark
+        font-size: 14px
+    .rating
+        display: flex
+        align-items: end
+        color: #0068ff
+        font-size: 13px
+        p
+            margin-left: 4px
+            line-height: 9px
+            font-size: 9px
+    button
+        margin-top: 15px
+        background-color: rgb(0, 104, 255)
+        color: white
+        border: none
+        height: 40px
+        width: 164px
+        &:hover
+            background-color: rgb(78, 150, 255)
+        
+@media screen and (max-width: 1535px)
+    .bestseller
+        .card-list
+            gap: 32px
+    .bestseller-card
+        .img-container
+            width: 298px
+            height: 471px
+            img
+                width: 298px
+            .img1,.img2
+                height: 427px
+
+@media screen and (max-width: 1320px)
+    .bestseller
+        .card-list
+            gap: 16px
+    .bestseller-card
+        width: 236px
+        .img-container
+            width: 236px
+            height: 382px
+            img
+                width: 298px
+            .img1,.img2
+                height: 338px
+        button
+            font-size: 13px
+
+@media screen and (max-width: 1024px)
+    .bestseller
+        h1
+            font-size: 26px
+        .card-list
+            grid-template-columns: auto auto
+            gap: 16px
+
+    .bestseller-card
+        width: 356px
+        .img-container
+            width: 296px
+            height: 554px
+            img
+                width: 356px
+            .img1,.img2
+                height: 510px
+        button
+            margin-top: 5px
+            font-size: 13px
+        p
+            font-size: 14px
+        .trade-mark
+            font-size: 12px
+
+@media screen and (max-width: 767px)
+    .bestseller-card
+        width: 296px
+        .img-container
+            width: 296px
+            height: 468px
+            img
+                width: 296px
+            .img1,.img2
+                height: 424px
+        button
+            margin-top: 5px
+            font-size: 13px
+
+@media screen and (max-width: 655px)
+    .bestseller-card
+        width: 45vw
+        height: auto
+        .img-container
+            width: 100%
+            height: 51vh

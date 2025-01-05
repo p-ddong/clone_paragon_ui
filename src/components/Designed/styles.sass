@@ -1,0 +1,117 @@
+.designed
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 100%
+    padding: 70px 0px
+    .designed-container
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 1504px
+        .designed-info
+            display: flex
+            flex-direction: column
+            gap: 36px
+            p
+                font-size: 42px
+            h1
+                font-size: 40px
+                font-weight: 600
+            h2
+                display: inline
+                font-size: 19px
+                font-weight: 400
+            button
+                height: 64px
+                width: 240px
+                font-size: 16px
+                font-weight: 500
+                border: none
+                border-radius: 40px
+                color: rgb(0, 104, 255)
+                background-color: rgb(210, 216, 248)
+                transition: all linear 0.1s
+
+                &:hover
+                    background-color: rgb(228 231 251)
+
+        .vid-info
+            video
+                height: 471px
+            div
+                margin-top: 15px
+                width: 100%
+                span
+                    text-align: center
+                    font-size: 24px
+                    font-weight: 500
+                    display: inline-block
+                    width: 50%
+            button
+                margin-top: 20px
+                display: none
+                height: 40px
+                width: 240px
+                font-size: 16px
+                font-weight: 500
+                border: none
+                border-radius: 40px
+                color: rgb(0, 104, 255)
+                background-color: rgb(210, 216, 248)
+                transition: all linear 0.1s
+                &:hover
+                    background-color: rgb(228 231 251)
+
+@media screen and (max-width: 1535px)
+    .designed
+        .designed-container
+            width: 1288px
+            .vid-info
+                video
+                    height: 403px
+
+@media screen and (max-width: 1320px)
+    .designed
+        .designed-container
+            width: 992px
+            .vid-info
+                video
+                    height: 310px
+
+@media screen and (max-width: 1024px)
+    .designed
+        .designed-container
+            width: 693px
+            flex-direction: column
+            .designed-info
+                gap: 15px
+                text-align: center
+                margin: 0px 128px
+                margin-bottom: 30px
+                h1
+                    font-size: 26px
+                h2
+                    font-size: 16px
+                p,button
+                    display: none
+            .vid-info
+                display: flex
+                align-items: center
+                flex-direction: column
+                div
+                    span
+                        font-size: 13px
+                        font-weight: 500px
+                video
+                    height: 429px
+                button
+                    display: block
+@media screen and (max-width: 767px)
+    .designed
+        .designed-container
+            width: 640px
+            .vid-info
+                video
+                    width: 90%
+                    height: auto
